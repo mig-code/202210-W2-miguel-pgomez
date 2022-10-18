@@ -86,10 +86,11 @@ html {
 }
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: var(--clr-orange-light);
+    background-color: var(--clr-blue);
     height: 100%;
     color: black;
-    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
 }
 
 header {
@@ -143,6 +144,8 @@ section div a:nth-child(1) {
 
 main {
     margin-bottom: 1rem;
+    background-color: var(--clr-orange-light);
+     min-height: 70vh;
 }
 main ul {
     padding: 1rem;
@@ -184,9 +187,9 @@ main h3 {
 
 footer {
     background-color: var(--clr-blue);
-    position: fixed;
-    bottom: 0;
+    margin-top: auto;
     width: 100%;
+    height: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
