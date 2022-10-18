@@ -184,6 +184,10 @@ main form button {
     height: min-content;
     width: min-content;
     border: none;
+    cursor: pointer;
+}
+main form button:hover {
+    background-color: var(--clr-purple);
 }
 
 footer {
