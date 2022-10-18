@@ -1,4 +1,197 @@
+/* RESET CSS*/
 
-*{
-    background-color: bisque;
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+/*
+  2. Remove default margin
+*/
+* {
+    margin: 0;
+}
+/*
+  3. Allow percentage-based heights in the application
+*/
+html,
+body {
+    height: 100%;
+}
+/*
+  Typographic tweaks!
+  4. Add accessible line-height
+  5. Improve text rendering
+*/
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+/*
+  6. Improve media defaults
+*/
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+/*
+  7. Remove built-in form typography styles
+*/
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+/*
+  8. Avoid text overflows
+*/
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+a {
+    text-decoration: none;
+}
+a:hover,
+a:visited {
+    color: black;
+}
+/*
+
+/* Custom Properties */
+
+:root {
+    --clr-blue: #5169a7;
+    --clr-orange: #d09d72;
+    --clr-orange-light: #d1bead;
+    --clr-orange-accent: #dc732f;
+    --clr-purple: #551690;
+}
+
+html {
+    height: 100%;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--clr-orange-light);
+    height: 100%;
+    color: black;
+    margin: 0 auto;
+}
+
+header {
+    background-color: var(--clr-blue);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    width: auto;
+}
+
+header h1 {
+    font-size: 1.5rem;
+}
+header nav ul {
+    display: flex;
+    list-style: none;
+}
+
+header nav ul li {
+    margin-left: 1rem;
+}
+header nav ul li a {
+    text-decoration: none;
+}
+nav li:nth-child(2) {
+    font-weight: bolder;
+}
+
+section {
+    background-color: var(--clr-orange);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    font-size: 1.3rem;
+}
+section div:nth-child(1) {
+    color: var(--clr-orange);
+    background-color: var(--clr-purple);
+    border-radius: 50%;
+    font-size: 1rem;
+    width: 1.8rem;
+    height: 1.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: transparent;
+    text-shadow: 0 0 0 var(--clr-orange);
+}
+
+main {
+    margin-bottom: 1rem;
+}
+main ul {
+    padding: 1rem;
+}
+main ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.3rem;
+}
+main ul li form span {
+    text-decoration: line-through;
+}
+
+main ul li:hover:nth-child(odd) {
+    color: var(--clr-orange-accent);
+    cursor: pointer;
+    color: transparent;
+    text-shadow: 0 0 0 var(--clr-orange-accent);
+}
+main ul li div {
+    font-size: 1rem;
+}
+
+main ul li div span {
+    font-size: 1.2rem;
+    margin-left: 1rem;
+    font-weight: bolder;
+    border-radius: 50%;
+}
+
+main h3 {
+    margin-top: 1rem;
+    border-top: 2px solid var(--clr-purple);
+    font-size: 1.5rem;
+    padding: 1rem;
+    text-align: right;
+}
+
+footer {
+    background-color: var(--clr-blue);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer img {
+    padding: 1rem;
+    max-width: 100%;
 }
