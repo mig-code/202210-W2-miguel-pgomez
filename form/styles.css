@@ -85,11 +85,12 @@ html {
     height: 100%;
 }
 body {
-    font-family: 'Roboto', sans-serif;
-    background-color: var(--clr-orange-light);
     height: 100%;
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--clr-blue);
     color: black;
-    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
 }
 
 header {
@@ -142,57 +143,54 @@ section div a:nth-child(1) {
 }
 
 main {
-
     margin-bottom: 1rem;
     padding: 1rem;
-    
+    background-color: var(--clr-orange-light);
+    min-height: 70vh;
 }
-main form{
+main form {
     display: flex;
     flex-direction: column;
-    width: 60%;
     max-width: 550px;
 }
 
-main h2{
+main h2 {
     font-size: 1.3rem;
     margin-bottom: 1rem;
 }
-main form label{
+main form label {
     margin-bottom: 1rem;
     font-size: 1.5rem;
 }
 
 main form input {
-    background-color:var(--clr-orange-light) ;
+    background-color: var(--clr-orange-light);
     margin-bottom: 1rem;
     padding: 0.5rem;
-    border:none;
+    border: none;
     border-bottom: 3px solid var(--clr-purple);
     font-size: 1rem;
 }
-main form input:focus-visible{
+main form input:focus-visible {
     outline: none;
-    
 }
 
-main form button{
-    background-color:var(--clr-blue);
+main form button {
+    background-color: var(--clr-blue);
     color: white;
     margin-top: 1rem;
     font-size: 1.2rem;
     padding: 0.5rem 0.3rem;
     height: min-content;
     width: min-content;
-    border:none;
+    border: none;
 }
-
 
 footer {
     background-color: var(--clr-blue);
-    position: fixed;
-    bottom: 0;
+    margin-top: auto;
     width: 100%;
+    height: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
