@@ -62,6 +62,13 @@ h5,
 h6 {
     overflow-wrap: break-word;
 }
+a {
+    text-decoration: none;
+}
+a:hover,
+a:visited {
+    color: black;
+}
 /*
 
 /* Custom Properties */
@@ -71,18 +78,17 @@ h6 {
     --clr-orange: #d09d72;
     --clr-orange-light: #d1bead;
     --clr-orange-accent: #dc732f;
-    -clr-purple: #551690;
+    --clr-purple: #551690;
 }
 
 html {
     height: 100%;
-    border: 1px solid red;
 }
 body {
     font-family: 'Roboto', sans-serif;
     background-color: var(--clr-orange-light);
     height: 100%;
-
+    color: black;
     margin: 0 auto;
 }
 
@@ -102,8 +108,9 @@ header nav ul {
     display: flex;
     list-style: none;
 }
+
 header nav ul li {
-    margin: 0 1rem;
+    margin-left: 1rem;
 }
 header nav ul li a {
     text-decoration: none;
@@ -122,10 +129,57 @@ section {
 }
 section div:nth-child(1) {
     color: var(--clr-orange);
-    background-color: #551690;
+    background-color: var(--clr-purple);
+    border-radius: 50%;
+    font-size: 1rem;
+    width: 1.8rem;
+    height: 1.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: transparent;
+    text-shadow: 0 0 0 var(--clr-orange);
 }
 
 main {
+    margin-bottom: 1rem;
+}
+main ul {
+    padding: 1rem;
+}
+main ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.3rem;
+}
+main ul li form span {
+    text-decoration: line-through;
+}
+
+main ul li:hover:nth-child(odd) {
+    color: var(--clr-orange-accent);
+    cursor: pointer;
+    color: transparent;
+    text-shadow: 0 0 0 var(--clr-orange-accent);
+}
+main ul li div {
+    font-size: 1rem;
+}
+
+main ul li div span {
+    font-size: 1.2rem;
+    margin-left: 1rem;
+    font-weight: bolder;
+    border-radius: 50%;
+}
+
+main h3 {
+    margin-top: 1rem;
+    border-top: 2px solid var(--clr-purple);
+    font-size: 1.5rem;
+    padding: 1rem;
+    text-align: right;
 }
 
 footer {
