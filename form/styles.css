@@ -142,45 +142,10 @@ section div a:nth-child(1) {
 }
 
 main {
+    background-color: red;
     margin-bottom: 1rem;
 }
-main ul {
-    padding: 1rem;
-}
-main ul li {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 1.3rem;
-}
-main ul li form span {
-    text-decoration: line-through;
-}
 
-main ul li:hover:nth-child(odd) {
-    color: var(--clr-orange-accent);
-    cursor: pointer;
-    color: transparent;
-    text-shadow: 0 0 0 var(--clr-orange-accent);
-}
-main ul li div {
-    font-size: 1rem;
-}
-
-main ul li div span {
-    font-size: 1.2rem;
-    margin-left: 1rem;
-    font-weight: bolder;
-    border-radius: 50%;
-}
-
-main h3 {
-    margin-top: 1rem;
-    border-top: 2px solid var(--clr-purple);
-    font-size: 1.5rem;
-    padding: 1rem;
-    text-align: right;
-}
 
 footer {
     background-color: var(--clr-blue);
